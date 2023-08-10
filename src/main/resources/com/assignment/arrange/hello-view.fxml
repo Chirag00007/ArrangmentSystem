@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" minHeight="-Infinity" minWidth="-Infinity" prefHeight="155.0" prefWidth="305.0" vgap="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.assignment.arrange.SeatingController">
+   <stylesheets>
+      <URL value="@styles.css" />
+   </stylesheets>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+
+   <Label alignment="BOTTOM_LEFT" styleClass="teacher" nodeOrientation="RIGHT_TO_LEFT" prefHeight="36" prefWidth="240.0" text="Teacher" GridPane.columnSpan="3"/>
+
+   <!-- Seating Chart -->
+   <GridPane hgap="5" prefHeight="36.0" prefWidth="166.0" vgap="5" GridPane.columnSpan="3" GridPane.rowIndex="1">
+      <Rectangle fx:id="seat00" arcHeight="10" arcWidth="10" fill="#ECECEC" height="110" stroke="#BDBDBD" strokeType="INSIDE" styleClass="rectangle" width="110" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+      <Label fx:id="label00" alignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+
+      <Rectangle fx:id="seat01" arcHeight="10" arcWidth="10" fill="#ECECEC" height="110" stroke="#BDBDBD" strokeType="INSIDE" width="110" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+      <Label fx:id="label01" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+      <Rectangle fx:id="seat02" arcHeight="10" arcWidth="10" fill="#ECECEC" height="110" stroke="#BDBDBD" strokeType="INSIDE" width="110" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+      <Label fx:id="label02" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+
+      <Rectangle fx:id="seat10" arcHeight="10" arcWidth="10" fill="#ECECEC" height="110" stroke="#BDBDBD" strokeType="INSIDE" width="110" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+      <Label fx:id="label10" alignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+
+      <Rectangle fx:id="seat11" arcHeight="10" arcWidth="10" fill="#ECECEC" height="110" stroke="#BDBDBD" strokeType="INSIDE" width="110" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label fx:id="label11" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+      <Rectangle fx:id="seat12" arcHeight="10" arcWidth="10" fill="#ECECEC" height="110" stroke="#BDBDBD" strokeType="INSIDE" width="110" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Label fx:id="label12" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+
+      <Rectangle fx:id="seat20" arcHeight="10" arcWidth="10" fill="#ECECEC" height="110" stroke="#BDBDBD" strokeType="INSIDE" width="110" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+      <Label fx:id="label20" alignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+
+      <Rectangle fx:id="seat21" arcHeight="10" arcWidth="10" fill="#ECECEC" height="110" stroke="#BDBDBD" strokeType="INSIDE" width="110" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Label fx:id="label21" alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+      <Rectangle fx:id="seat22" arcHeight="10" arcWidth="10" fill="#ECECEC" height="110.0" stroke="#BDBDBD" strokeType="INSIDE" width="110.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Label fx:id="label22" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <columnConstraints>
+         <ColumnConstraints />
+         <ColumnConstraints />
+         <ColumnConstraints />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints />
+         <RowConstraints />
+         <RowConstraints />
+      </rowConstraints>
+   </GridPane>
+
+   <!-- Form -->
+   <VBox alignment="center" prefHeight="100.0" prefWidth="340.0" spacing="5" GridPane.columnSpan="3" GridPane.rowIndex="2">
+      <Label styleClass="label" text="Enter Student Name:" />
+      <TextField fx:id="nameInput" prefHeight="30.0" prefWidth="257.0" styleClass="text-field" />
+      <Label styleClass="label" text="Choose Color:" />
+      <ColorPicker fx:id="colorPicker" styleClass="text-field"  prefHeight="30.0" prefWidth="257.0" />
+      <Button fx:id="addButton" onAction="#addStudent" styleClass="button" text="Add Student" />
+   </VBox>
+</GridPane>

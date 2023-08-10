@@ -63,7 +63,6 @@
          <RowConstraints />
       </rowConstraints>
    </GridPane>
-
    <!-- Form -->
    <VBox alignment="center" prefHeight="100.0" prefWidth="340.0" spacing="5" GridPane.columnSpan="3" GridPane.rowIndex="2">
       <Label styleClass="label" text="Enter Student Name:" />

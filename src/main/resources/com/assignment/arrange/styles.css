@@ -1,0 +1,38 @@
+/* Apply styles to the seating rectangles */
+.rectangle {
+    -fx-fill: #ECECEC;
+    -fx-stroke: #BDBDBD;
+    -fx-stroke-type: inside;
+    -fx-arc-width: 10;
+    -fx-arc-height: 10;
+}
+
+/* Apply styles to labels */
+.label {
+    -fx-font-size: 14;
+    -fx-font-family: sans-serif;
+    -fx-font-weight: bold;
+    -fx-padding: 10;
+}
+
+/* Apply styles to text fields */
+.text-field {
+    -fx-font-size: 14;
+    -fx-background-color: #bfbfbf;
+}
+.teacher{
+    -fx-font-size: 34;
+}
+
+/* Apply styles to color picker */
+.color-picker {
+    -fx-font-size: 14;
+}
+
+/* Apply styles to buttons */
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-family: 'Arial';
+    -fx-font-size: 14;
+}
